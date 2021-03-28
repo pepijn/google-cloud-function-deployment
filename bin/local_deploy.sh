@@ -5,8 +5,6 @@ set -euxo pipefail
 # Shellcheck itself
 shellcheck "$0"
 
-cd "$(dirname "$(realpath "$0")")/../../"
-
 function main() {
   ./bin/test.sh
 
